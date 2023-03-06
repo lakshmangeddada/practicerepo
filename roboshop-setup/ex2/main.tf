@@ -16,5 +16,5 @@ variable "instances" {
 }
 
 output "public_ips" {
-  value = aws_instance.frontend.public_ip
+  value = aws_instance.frontend[count.index].public_ip
 }
