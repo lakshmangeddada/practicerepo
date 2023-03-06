@@ -7,6 +7,14 @@ resource "aws_instance" "frontend" {
   }
 }
 
+resource "aws_route53_record" "frontend" {
+  zone_id = "Z10202231Q9C3TKFTZOQE"
+  name    = "frontend-dev.devops71.tech"
+  type    = "A"
+  ttl     = 30
+  records = [aws_instance.frontend.private_ip]
+}
+
 
 resource "aws_instance" "catalogue" {
   ami = "ami-0a017d8ceb274537d"
