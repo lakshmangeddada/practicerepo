@@ -16,5 +16,5 @@ resource "aws_instance" "ec2" {
 }
 
 output "security_id" {
-  value = vpc_security_group_ids
+  value = "vpc_security_group_ids"
 }
