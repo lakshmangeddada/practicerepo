@@ -3,6 +3,6 @@ resource "aws_instance" "ec2" {
   instance_type = "t3.micro"
   security_groups = [ "sg-0615d2d6b16a84caa" ]
   tags = {
-    name: "test"
+    Name: "test"
   }
 }
