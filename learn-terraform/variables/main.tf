@@ -4,7 +4,7 @@ output "security_group_id" {
 
 variable "security_groups" {
   default = [ "sg-0615d2d6b16a84caa" ]
-  default1 = "t3.micro"
+  describe = "t3.micro"
 }
 
 
