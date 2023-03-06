@@ -21,7 +21,7 @@ variable "sample2" {
 
 variable "sample3" {
   default = {
-    string = lakshman
+    string = "lakshman"
     boolean = true
 
   }
