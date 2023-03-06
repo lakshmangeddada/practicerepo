@@ -1,4 +1,7 @@
 output "sample" {
   value = "Hello world"
-  name = "Welcome home"
+}
+
+output "sample1" {
+  value = "welcome home"
 }
