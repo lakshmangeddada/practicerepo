@@ -10,7 +10,7 @@ resource "aws_instance" "instances" {
   instance_type = each.value["type"]
   vpc_security_group_ids = [ "sg-0615d2d6b16a84caa" ]
   tags = {
-    Name = each.value["name"]
+    name = each.value["name"]
   }
 }
 
@@ -21,7 +21,7 @@ variable "instances" {
       type = "t3.micro"
     }
     user = {
-      Name = "user"
+      name = "user"
       type = "t3.small"
     }
   }
