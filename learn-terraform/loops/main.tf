@@ -6,6 +6,7 @@ resource "null_resource" "nothing" {
   count = var.d1
 }
 
+/*
 variable "d2" {
   default = [ "apple", "banana" ]
 }
@@ -29,4 +30,4 @@ variable "d3" {
 
 resource "null_resource" "anything" {
   for_each = var.d3
-}
+}*/
