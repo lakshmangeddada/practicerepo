@@ -26,3 +26,7 @@ variable "instances" {
     }
   }
 }
+
+output "public_ips" {
+  value = [for k, v in aws_instance.instances : v.public_ip]
+}
