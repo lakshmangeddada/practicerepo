@@ -5,6 +5,10 @@ module "test" {
   instance_type = each.value["type"]
 }
 
+module "sg" {
+  source = "./sg"
+}
+
 variable "instances" {
   default = {
     cart = {
