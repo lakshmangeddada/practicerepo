@@ -12,5 +12,5 @@ variable "instances" {
 }
 
 output "instances" {
-  value = var.instances
+  value = var.instances.cart
 }
