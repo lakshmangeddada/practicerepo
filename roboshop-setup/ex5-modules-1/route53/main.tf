@@ -5,3 +5,6 @@
 #  ttl     = 30
 #  records = var.private_ip
 #}
+
+variable "private_ip" {}
+variable "component" {}
